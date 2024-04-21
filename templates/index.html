@@ -2,12 +2,48 @@
 <html>
 <head>
     <title>Gesture Controlled Presentation</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: inline-block;
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+        }
+        .credits {
+            margin-top: 50px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <h1>Upload PNG Files</h1>
-    <form method="post" enctype="multipart/form-data">
-        <input type="file" name="files" multiple>
-        <input type="submit" value="Upload">
-    </form>
+    <h1>Gesture Control</h1>
+
+    <div class="container">
+        <h2>Upload PNG Files</h2>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="files" multiple>
+            <input type="submit" value="Upload">
+        </form>
+        <p>Instructions:</p>
+        <ul>
+            <li>Upload your PNG presentation slides.</li>
+            <li>Use the "Index Finger Raised" gesture to move to the next slide.</li>
+            <li>Use the "Thumb Raised" gesture to move to the previous slide.</li>
+            <li>Use the "Index and Middle Finger Raised" gesture to draw on the current slide.</li>
+            <li>Use the "Index, Middle, and Ring Finger Raised" gesture to erase the last drawn annotation.</li>
+        </ul>
+    </div>
+
+    <div class="credits">
+        Created by
+        <span>Ankita Dutta</span> &bull; <span>Atin Dey</span> &bull; <span>Fouzia Samreen Khan</span> &bull; <span>Arnab Bhattacharya</span> &bull; <span>Priyanshu Kumar</span>
+    </div>
 </body>
 </html>
