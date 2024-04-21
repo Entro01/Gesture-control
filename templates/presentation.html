@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gesture Controlled Presentation</title>
+    <style>
+        #currentImage {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gesture Controlled Presentation</h1>
+    <div>
+        <img id="currentImage" src="{{ url_for('video_feed') }}" alt="Current Image">
+    </div>
+</body>
+</html>
